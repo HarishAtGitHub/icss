@@ -1,0 +1,67 @@
+/* this is a custom css file */
+
+/* to bring space between form elements */
+.form-horizontal .control-group {
+    margin-bottom: 32px;
+}
+
+/* to make input elements glow on focus */
+.focusedInput {
+    border-color: rgba(82,168,236,.8) ;
+    outline: 0;
+    outline: thin dotted \9;
+    -moz-box-shadow: 0 0 8px rgba(82,168,236,.6);
+    box-shadow: 0 0 8px rgba(82,168,236,.6) !important;
+}
+
+/* when i put form-control class the width become 100 % so i am reducing it */
+.form-control{
+    width: 30%;
+}
+/* this centres the component viewed in view panel */
+#component{
+    margin-left: 555px;
+}
+/* this avoids parts from being hidden under the nav bar at top . dont' try to give position for
+view and design panel separately as that will result in overlapping of design panel when the top view panel expands*/
+div#scratchPad {
+    padding-top: 100px;
+
+}
+/* use when you need scroll only inside , but this technique fails when opened in mobile ad mobile ht is different
+div#inputs {
+    height:360px;
+    overflow:scroll;
+}*/
+
+/* without this the drop down button sticks to the top of the nave bar, to be fixed - find some nav bar class that will do this */
+div#componentsDropdown {
+    margin-top: 7px;
+    margin-left: 970px;
+}
+/*
+body { padding-top: 60px; }
+@media screen and (max-width: 768px) {
+    body { padding-top: 0px; }
+}*/
+
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "icss",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "~1.2.0",
+    "jquery": "~1.10.2",
+    "angular-route": "~1.2.0"
+  },
+  "devDependencies": {},
+  "resolutions": {
+    "angular": "1.2.4"
+  },
+  "ignore": [
+    ".*",
+    "CHANGELOG.md",
+    "component.json",
+    "package.json",
+    "_includes",
+    "_layouts",
+    "src",
+    "test",
+    "vendor"
+  ]
+}

@@ -1,0 +1,7 @@
+<header-bar></header-bar>
+<!-- scratch pad -->
+<div id="scratchPad" class="container"  ng-controller="TabcontrolledbydropdownCtrl">
+    <div ng-repeat="tab in tabs">
+    </div>
+    <div ng-include src="tabs[tabs.activeTab].page"></div>
+</div>

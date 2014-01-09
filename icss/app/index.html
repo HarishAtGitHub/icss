@@ -1,0 +1,59 @@
+
+
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles/lib/bootstrap.css">
+    <link rel="stylesheet" href="styles/custom-styles.css">
+</head>
+<body ng-app="icssApp">
+<!-- Add your site or application content here this ng-view is the place where the results of ng-route comes-->
+<div class="container" ng-view=""> </div>
+
+
+
+
+<!--libraries-->
+<script src="scripts/lib/jquery/jquery.js"></script><!--be sure that it is in the first position angularstrap needs bootstrap which internally needs jquery -->
+
+<script src="scripts/lib/angular/angular.js"></script>
+<script src="scripts/lib/angular-route/angular-route.js"></script><!-- this gives $routeProvider , so easy routing is possible -->
+
+<script src="scripts/lib/bootstrap/bootstrap.js"></script>
+<script src="scripts/lib/angular-strap/angular-strap.js"></script>
+<!-- following is to bring code writing facility in text area -->
+
+<link rel="stylesheet" href="styles/lib/codemirror.css">
+<script src="scripts/lib/codemirror/codemirror.js"></script>
+<!--<script src="http://codemirror.net/mode/xml/xml.js"></script>-->
+<script src="http://codemirror.net/mode/css/css.js"></script>
+<script src="scripts/lib/angular-ui-codemirror/ui-codemirror.js"></script>
+<!--<link rel="stylesheet" type="text/css" href="http://codemirror.net/lib/codemirror.css"/>
+<script src="http://codemirror.net/lib/codemirror.js"></script>
+<script src="http://codemirror.net/mode/xml/xml.js"></script>
+<script src="http://angular-ui.github.io/ui-codemirror/build/ui-codemirror.js"></script>-->
+
+
+<!--custom js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/directives/headerBar.js"></script>
+<script src="scripts/directives/designBar.js"></script>
+<script src="scripts/directives/viewBar.js"></script>
+<script src="scripts/controllers/ViewDesignCombo.js"></script>
+<script src="scripts/controllers/TabControlledByDropDown.js"></script>
+<script src="scripts/services/BroadcastActivetab.js"></script>
+<script src="scripts/controllers/DropDownControllingTab.js"></script>
+
+<script src="scripts/controllers/Codemirror.js"></script>
+
+
+</body>
+</html>

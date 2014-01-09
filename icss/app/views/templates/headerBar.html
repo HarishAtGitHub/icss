@@ -1,0 +1,17 @@
+<!-- button bar -->
+<div id="headerbar" class="navbar navbar-inverse navbar-fixed-top" >
+    <div class="navbar-inner"> <!-- without this the icss is not inline with words view and design below -->
+        <div class="container"><!-- without this  the navboar options are starting from the browser border left start-->
+            <a class="navbar-brand" href="/" style="color: #ffffff">iCSS</a>
+            <div id="componentsDropdown"   ng-controller="DropdowncontrollingtabCtrl"> <!-- class pull-right made dropdown options hide on right-->
+                <div class="btn-group" >
+                    <!--<button type="button" class="btn btn-primary">Components</button>
+                    <button class="btn btn-primary" bs-dropdown="dropdown">
+                        <span class="caret"></span>
+                    </button>-->
+                    <button type="button" class="btn btn-primary" bs-dropdown="dropdown">Components&nbsp;&nbsp;&nbsp;<b class="caret"></b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
