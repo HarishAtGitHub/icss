@@ -1,10 +1,9 @@
-#To start development do 
+##Developers
 
-git clone https://github.com/HarishAtGitHub/icss
-npm install & bower install 
-grunt serve
+>
+     $ git clone https://github.com/HarishAtGitHub/icss
+     $ npm install & bower install 
+     $ grunt serve
 
++ Access the running application at http://localhost:9000
 
-run npm install -g yo grunt-cli bower 
-npm install -g generator-angular 
-with sudo 
