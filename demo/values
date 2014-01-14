@@ -1,8 +1,0 @@
-btn btn-success
-
-border-top-right-radius : 60px;
-border-bottom-right-radius : 60px;
-border-top-left-radius : 60px;
-border-bottom-left-radius : 60px;
-
-font:italic bold 40px Georgia, serif;
