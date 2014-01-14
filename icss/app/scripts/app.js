@@ -2,8 +2,7 @@
 
 angular.module('icssApp', [
   'ngRoute',
-  '$strap.directives',
-        'ui.codemirror'
+  '$strap.directives'
 ])
   .config(function ($routeProvider) {
     $routeProvider
