@@ -1,14 +1,14 @@
 <div ng-controller="ViewdesigncomboCtrl">
     <div class="view-bar">
-        <button type="button" id="component" class="{{ component.cssClass }}" style="{{component.style}}" ng-show="component.content.length" ><span style="{{component.contentStyle}}">{{ component.content }}</span></button>
+        <button type="button" id="component" class="{{ component.cssClass.join(' ') }}" style="{{component.style}}" ng-show="component.content.length" ><span style="{{component.contentStyle}}">{{ component.content }}</span></button>
     </div>
     <div class="design-bar ">
 
 
         <div class="control-group">
             <label class="label label-primary" for="button-css">BUTTON CSS CLASS :</label>
-            <div class="controls" >
-                <textarea class="form-control" id="button-css" rows="4" cols="50" ng-model="component.cssClass"></textarea>
+            <div class="controls" ng-controller="InputintellisenseCtrl" >
+                <input id="button-css" type="text" ui-select2="select2Config" ng-model="component.cssClass" style="width:300px;" />
             </div>
         </div>
         <div class="control-group">
@@ -33,7 +33,7 @@
             <label class="label label-primary" for="code">CODE :</label>
             <div class="controls">
                 <textarea class="form-control" id="code" readonly rows="4" cols="50" >
-                    <button type="button" id="button-id" class="{{ component.cssClass }}" style="{{component.style}}">
+                    <button type="button" id="button-id" class="{{ component.cssClass.join(' ') }}" style="{{component.style}}">
                         <span style="{{component.contentStyle}}">{{ component.content }}</span>
                     </button>
                 </textarea>

@@ -2,7 +2,8 @@
 
 angular.module('icssApp', [
   'ngRoute',
-  '$strap.directives'
+  '$strap.directives',
+  'ui.select2'
 ])
   .config(function ($routeProvider) {
     $routeProvider
