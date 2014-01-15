@@ -41,7 +41,7 @@ angular.module('icssApp')
 
     $scope.select2Config = {
       multiple: true,
-      data: Cssclassesgetterservice.getButtonCssClasses(),
+      data: Cssclassesgetterservice.getBootstrapButtonCssClasses(),
       simple_tags : true,
       tokenSeparators: [","],
       createSearchChoice: createSearchChoice(),

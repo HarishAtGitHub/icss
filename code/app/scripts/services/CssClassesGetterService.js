@@ -4,7 +4,7 @@ angular.module('icssApp')
   .service('Cssclassesgetterservice', function Cssclassesgetterservice() {
     // AngularJS will instantiate a singleton by calling "new" on this function
     // TO BE FIXED : See if you can provide an array as value instead of giving a redundnat key by name "id"
-    this.getButtonCssClasses = function() { 
+    this.getBootstrapButtonCssClasses = function() { 
                                  return [
                                            {
                                              "id": "btn"
