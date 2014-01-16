@@ -28,6 +28,8 @@ angular.module('icssApp')
                                              "id": "btn-xs"
                                            }, {
                                              "id": "btn-block"
+                                           }, {
+                                             "id": "disabled"
                                            }
                                        ];
                                }
