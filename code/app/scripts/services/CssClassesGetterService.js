@@ -17,6 +17,8 @@ angular.module('icssApp')
                                            }, {
                                              "id": "btn-lg"
                                            }, {
+                                             "id": "btn-sm"
+                                           }, {
                                              "id": "btn-link"
                                            }, {
                                              "id": "btn-primary"
