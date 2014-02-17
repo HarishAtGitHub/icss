@@ -28,7 +28,8 @@ div#scratchPad {
     padding-top: 100px;
 
 }
-/* use when you need scroll only inside , but this technique fails when opened in mobile ad mobile ht is different
+/* use when you need scroll only inside , but this technique fails when opened in mobile ad mobile ht is different . Also it breaks the idea that the directive should be generic*/
+/*
 div#inputs {
     height:360px;
     overflow:scroll;
@@ -64,4 +65,36 @@ body { padding-top: 60px; }
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+/* The following css was copied from todc library https://github.com/todc/todc-select2/blob/master/select2.css */
+.select2-container-multi .select2-choices .select2-search-choice {
+  -webkit-border-radius: 2px;
+  -moz-border-radius   : 2px;
+  border-radius        : 34px;/* in the original library this was 2px*/
+  -moz-background-clip   : padding;
+  -webkit-background-clip: padding-box;
+  background-clip        : padding-box;
+  background-color: #DAE4F6;
+  color: #222;
+  font-family: Arial;
+  border: 1px solid #DAE4F6;
+  line-height: 23px;
+  padding: 0 19px 0 5px;
+  //margin: 1px;
+  position: relative;
+  cursor: default;
+  border-left: 4px solid #EB1E0C;
+  border-right: 4px solid #EB1E0C;
+}
+.select2-container-multi .select2-choices .select2-search-choice span {
+  cursor: default;
+}
+.select2-container-multi .select2-choices .select2-search-choice-focus {
+  background: #A6D7F5;
+}
+
+.select2-container-multi .select2-search-choice-close { 
+  right : 3px !important;
+  left: inherit !important;
 }
